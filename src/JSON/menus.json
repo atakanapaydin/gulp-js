@@ -1,0 +1,52 @@
+[
+  {
+    "langCode": "tr",
+    "menus": [
+      {
+        "title": "Ana Sayfa",
+        "url": "/",
+        "sort": 1
+      },
+      {
+        "title": "Hakkımızda",
+        "url": "/hakkimizda",
+        "sort": 2
+      },
+      {
+        "title": "Nasıl Çalışır?",
+        "url": "/nasil-calisir",
+        "sort": 3
+      },
+      {
+        "title": "Ücretler",
+        "url": "/ucretler",
+        "sort": 4
+      }
+    ]
+  },
+  {
+    "langCode": "en",
+    "menus": [
+      {
+        "title": "Home",
+        "url": "/",
+        "sort": 1
+      },
+      {
+        "title": "About Us",
+        "url": "/about-us",
+        "sort": 2
+      },
+      {
+        "title": "How Ite Work",
+        "url": "/how-it-work",
+        "sort": 3
+      },
+      {
+        "title": "Pricing",
+        "url": "/pricing",
+        "sort": 4
+      }
+    ]
+  }
+]

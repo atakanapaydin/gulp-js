@@ -1,0 +1,28 @@
+[
+  {
+    "langCode": "tr",
+    "signUp": {
+      "title": "Hesap Oluştur",
+      "url": "/"
+    },
+    "productSearch": {
+      "placeHolder": "Ürünlerde Ara..."
+    },
+    "getMore": {
+      "title": "Daha Fazlası"
+    }
+  },
+  {
+    "langCode": "en",
+    "signUp": {
+      "title": "Sign-Up",
+      "url": "/"
+    },
+    "productSearch": {
+      "placeHolder": "Product Search..."
+    },
+    "getMore": {
+      "title": "Get More"
+    }
+  }
+]

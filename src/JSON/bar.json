@@ -1,0 +1,22 @@
+[
+  {
+    "langCode": "tr",
+    "number": "#1",
+    "title": "Bir ajans işi sağlayan bir şirkettir...",
+    "description": "Ajans işi, müşterilerine özel bir hizmet sunan bir şirkettir. Ajanslar genellikle başka bir şirket adına hareket eder,",
+    "link": {
+      "text": "Daha Fazlası",
+      "href": "/"
+    }
+  },
+  {
+    "langCode": "en",
+    "number": "#1",
+    "title": "An agency business is a company that provides...",
+    "description": "An agency business is a company that provides a specialized service to their clients. Often, agencies act on behalf of another company,",
+    "link": {
+      "text": "Read More",
+      "href": "/"
+    }
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "langCode": "tr",
+    "banner": [
+      {
+        "title": "Teknoloji ve yaratıcılığın [optimum] buluşması",
+        "description": "2000 yılında İstanbul’da kurulduk. World wide web büyüdükçe biz de büyüdük; ihtiyaçlar değişti, biz de değiştik. Bu güne kadar yüzü aşkın yerli ve yabancı firmaya B2B, B2C, B2E, özel yazılım çözümleri ürettik.",
+        "button": {
+          "text": "Daha Fazlası",
+          "link": "/"
+        }
+      },
+      {
+        "title": "Teknoloji ve yaratıcılığın [optimum] buluşması",
+        "description": "2000 yılında İstanbul’da kurulduk. World wide web büyüdükçe biz de büyüdük; ihtiyaçlar değişti, biz de değiştik. Bu güne kadar yüzü aşkın yerli ve yabancı firmaya B2B, B2C, B2E, özel yazılım çözümleri ürettik.",
+        "button": {
+          "text": "Daha Fazlası",
+          "link": "/"
+        }
+      }
+    ]
+  },
+  {
+    "langCode": "en",
+    "banner": [
+      {
+        "title": "Digital [Agency] With Solid Design",
+        "description": "An agency business is a company that provides a specialized service to their clients. Often, agencies act on behalf of ",
+        "button": {
+          "text": "Get Started",
+          "link": "/"
+        }
+      },
+      {
+        "title": "Digital [Agency] With Solid Design",
+        "description": "An agency business is a company that provides a specialized service to their clients. Often, agencies act on behalf of ",
+        "button": {
+          "text": "Get Started",
+          "link": "/"
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,251 @@
+@import '../config/import';
+@import '../subpage/subpage.scss';
+section.banner {
+    background-color: var(--sectionColor);
+    padding: 100px 0;
+    @include max1024 {
+      padding: 0 0 30px 0;
+    }
+    .mySwiper {
+      margin-left: 120px;
+      @include max1450 {
+        margin-left: 70px;
+      }
+      swiper-slide {
+        display: flex;
+        padding: 30px 0;
+        .swiper-content {
+          width: 60%;
+          padding: 15px 0;
+          display: flex;
+          flex-direction: column;
+          gap: 45px;
+          &-title {
+            font-size: 90px;
+            font-family: var(--fontRefolle);
+            span.block-span {
+              display: block;
+              line-height: 130px;
+            }
+            .agency-span {
+              display: inline-block;
+              padding: 8px 16px;
+              border: 3px solid var(--activeLinkColor);
+              position: relative;
+              line-height: 90px;
+              @extend .box-border;
+              .right-top-border {
+                @extend .box-border;
+                &::before {
+                  top: -11px;
+                  right: -10px;
+                  left: auto;
+                }
+  
+                &::after {
+                  bottom: -9px;
+                  left: -10px;
+                  right: auto;
+                }
+              }
+            }
+            .design-square {
+              display: inline-block;
+              position: relative;
+              top: 5px;
+              max-width: 130px;
+              width: 100%;
+              height: 70px;
+              background-color: var(--loginColor);
+              overflow: hidden;
+              .first,
+              .second,
+              .third,
+              .fourth {
+                &::after {
+                  content: '';
+                  position: absolute;
+                  top: -4px;
+                  left: 3px;
+                  background-color: var(--whiteColor);
+                  width: 4px;
+                  height: 150%;
+                  transform: rotate(23deg);
+                }
+              }
+              .second {
+                &::after {
+                  left: 45px;
+                  transform: rotate(2deg);
+                }
+              }
+              .third {
+                &::after {
+                  left: 70px;
+                  transform: rotate(10deg);
+                }
+              }
+              .fourth {
+                &::after {
+                  left: 105px;
+                  transform: rotate(-10deg);
+                }
+              }
+            }
+          }
+          &-desc {
+            font-size: 24px;
+            color: var(--linkColor);
+            font-family: var(--fontNeue);
+            padding-right: 290px;
+            line-height: 36px;
+            letter-spacing: 1.2px;
+          }
+          &-link {
+            @extend .link;
+            a.btn {
+              padding: 0 !important;
+              width: 208px;
+              height: 64px;
+              display: flex !important;
+              align-items: center;
+              justify-content: center;
+              letter-spacing: 2px;
+            }
+          }
+        }
+        .swiper-image {
+          width: 40%;
+          position: relative;
+          &-frame{
+              position: absolute;
+              max-width: 380px;
+              width: 100%;
+              height: 530px;
+              border: 2px solid var(--borderColor);
+              right: 125px;
+              top: 50px;
+              @extend .center;
+              img {
+                  max-width: 345px;
+                  width: 100%;
+                  height: 492px;
+                  object-fit: cover;
+                  position: absolute;
+                  z-index: 1;
+                }
+                .swiper-image-frame-button{
+                  position: absolute;
+                  width: 152px;
+                  height: 152px;
+                  bottom: -40px;
+                  left: -70px;
+                  border-radius: 50%;
+                  img{
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover;
+                  }
+                }
+          }
+          &-back-bg{
+              position: absolute;
+              top: 0;
+              right: 0;
+              img{
+              width: 350px;
+              height: 350px;
+              }
+          }
+        }
+      }
+      @include max1200{
+        swiper-slide{
+            .swiper-content{
+                &-title{
+                    font-size: 75px;
+                    
+                }
+                &-desc{
+                    padding-right: 135px;
+                }
+            }
+            .swiper-image{
+                &-frame{
+                    right: 70px;
+                }
+            }
+        }
+      }
+      @include max768{
+        margin-left: 0;
+        padding: 0 25px;
+        swiper-slide{
+            flex-direction: column;
+            .swiper-content{
+                width: 100%;
+                gap: 27px;
+                &-title{
+                    font-size: 40px;
+                    span.block-span{
+                        line-height: 56px;
+                        padding: 0 10px;
+                    }
+                    .agency-span{
+                        line-height: 56px;
+                        padding: 4px 0;
+                    }
+                    .design-square{
+                        top: 3px;
+                        max-width: 85px;
+                        height: 40px;
+                    }
+                }
+                &-desc{
+                    padding-right: 30px;
+                    font-size: 14px;
+                    line-height: 21px;
+                    letter-spacing: 0.7px;
+                }
+                &-link{
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    a.btn{
+                        
+                    }
+                }
+            }
+            .swiper-image{
+                width: 100%;
+                height: 485px;
+                &-frame{
+                    max-width: 235px;
+                    width: 100%;
+                    height: 330px;
+                    img{
+                        object-fit: contain;
+                        height: 320px;
+                    }
+                    .swiper-image-frame-button{
+                        width: 70px;
+                        height: 70px;
+                        right: -32px;
+                        left: auto;
+                        img{
+
+                        }
+                    }
+                }
+                &-back-bg{
+                    img{
+                        width: 210px;
+                        height: 210px;
+                    }
+                }
+            }
+        }
+      }
+    }
+  }

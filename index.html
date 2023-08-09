@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes" name="viewport" />
+    <title>Gulp Js Website</title>
+    <link rel="stylesheet" href="src/dist/app.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10.1.0/swiper.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="mobile-menu">
+          <div class="toggle-menu">
+            <img src="src/img/mobile-menu.svg" alt="">
+          </div>
+        </div>
+        <div class="logo">
+          <a href="index.html">
+            <img src="../src/img/logo.svg" alt="Golin" /> Golin </a>
+        </div>
+        <div class="navigation">
+          <div class="nav-list">
+            <ul id="navList" class="navList"></ul>
+          </div>
+          <div class="lang-list">
+            <a href="#" id="trBtn" class="lang-btn" data-lang="tr">TR</a>
+            <span>/</span>
+            <a href="#" id="enBtn" class="lang-btn" data-lang="en">EN</a>
+          </div>
+          <div class="login"></div>
+        </div>
+      </div>
+    </header>
+    <section class="banner">
+      <swiper-container class="mySwiper"></swiper-container>
+    </section>
+    <section class="bar">
+      <div class="container bar-container"></div>
+    </section>
+    <section class="products">
+      <div class="container">
+        <h1>Products</h1>
+        <div class="mobile-search">
+          <span>
+            <img src="src/img/search.svg" alt="">
+          </span>
+        </div>
+        <div class="search"></div>
+        <div class="product-list"></div>
+        <div class="load-more"></div>
+    </section>
+    <!-- <script src="src/dist/app.min.js"></script> -->
+    <script src="src/js/utility.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,170 @@
+@import '../config/import';
+@import '../subpage/subpage.scss';
+
+header {
+    padding: 40px 0;
+    width: 100%;
+    background-color: var(--whiteColor);
+    transition: all 0.2s;
+    z-index: 12;
+    &.sticky{
+        position: fixed;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      .mobile-menu{
+        display: none;
+      }
+      .logo {
+        a {
+          @extend .center;
+          max-width: 143px;
+          gap: 9px;
+          font-size: 40px;
+          font-weight: 500;
+          letter-spacing: 0.64px;
+          color: #000;
+          text-decoration: none;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+      .navigation {
+        @extend .center;
+        .nav-list {
+          ul {
+            display: flex;
+            gap: 63px;
+            li {
+              a {
+                font-size: 16px;
+                text-decoration: none;
+                color: var(--linkColor);
+                font-weight: 400;
+                &.active, &:hover {
+                  color: var(--activeLinkColor);
+                  position: relative;
+                  font-weight: 700;
+                  &::after {
+                    @extend .common-style;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .lang-list {
+          padding: 0 31px 0 87px;
+          a {
+            color: var(--linkColor);
+            font-weight: 900;
+            text-decoration: none;
+            position: relative;
+            &.active {
+              color: var(--activeLangLinkColor);
+              &::after {
+                @extend .common-style;
+                width: 100%;
+              }
+            }
+          }
+        }
+        .login {
+          background-color: var(--activeLinkColor);
+          position: relative;
+          @extend .center;
+          @extend .link;
+        }
+      }
+    }
+    @include max1024{
+        .container{
+            .navigation{
+                .nav-list{
+                    ul{
+                        gap: 20px;
+                        li{
+                            a{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+                .lang-list{
+                    padding: 0 31px 0 40px;
+                }
+            }
+        }
+    }
+    @include max991{
+        padding: 22px 0;
+    }
+    @include max768{
+        .container{
+            .mobile-menu{
+                display: block;
+                cursor: pointer;
+            }
+            .logo{
+                a{
+                    font-size: 30px;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+            }
+            .navigation{
+                .nav-list{
+                    position: absolute;
+                    top: -1500px;
+                    left: -500%;
+                    transform: translateX(-50%);
+                    transition: all 0.3s;
+                    ul{
+                        gap: 50px;
+                        flex-direction: column;
+                        top: 50px;
+                        li{
+                            text-align: center;
+                            a{
+                                font-size: 30px;
+                                left: 10px;
+                            }
+                        }
+                    }
+                    &.active{
+                        position: fixed;
+                        top: 75px;
+                        left: 50%;
+                        width: 100%;
+                        height: 100vh;
+                        background-color: #fff;
+                        z-index: 12;
+                        ul{
+                            margin-top: 300px;
+                        }
+                    }
+                }
+                .lang-list{
+                    padding: 0 31px 0 20px;
+                }
+                .login{
+                    display: none;
+                    position: absolute;
+                    bottom: 180px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    &.active{
+                        display: block;
+                        z-index: 12;
+                    }
+                }
+            }
+        }
+    }
+  }
